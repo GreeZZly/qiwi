@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>QIWI с накруткой 2</title>
+<link rel="icon" type="image/png" href="img/icon_flat.png" tppabs="/img/icon_flat.png">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/pages.css" type="text/css" />
+<link rel="stylesheet" href="css/cabinet.css" type="text/css" />
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<link href="../fonts.googleapis.com/css-family=Open+Sans-300,400,600.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="main_head_general">
+	<div class="main_header_child">
+		<div class="menu_header_left">
+			<ul>
+				<li><a class="menu_header_left_a" href="/">Главная</a></li>
+				<li><a class="menu_header_left_a" href="/?page=news">Новости</a></li>
+								<li><a class="vk_public_a" href="/" target="_blank"></a></li>
+				<li>
+								<font color="#fff">Проект стартовал 10 февраля в 10:00 по Москве.</font>
+				<br>										
+				</li>
+			</ul>
+		</div>
+		<div class="menu_header_right">
+			
+			<ul>
+				<li><a href="/?page=registration">Зарегистрироваться</a></li>
+				<li><a href="/?page=auth">Войти</a></li>
+			</ul>
+				
+		</div>
+			</div>
+	
+	
+	
+</div>	
+
+<div class="global_block_main_header">
+		<div class="main_header">
+			<h1>Добро пожаловать в MakeYourCash</h1>
+			<h2>Это касса финансовой взаимопомощи, которая работает по принципу финансовой пирамиды.</h2>
+				
+				<div class='button_register'><a href="/?page=registration" class='btn btn_join'>Присоединиться</a></div>
+					
+							</div>
+		<div class="clouds"></div>
+	</div>
+	
+	
+	
+	
+	<div class="main_block">
+		<div class="all_block_global" style=" min-height: 900px;">
+		
+		
+		
+		
+	<br>	
+		
+		
+
+			<div class="four_block">
+				<div class="title_miniblock_general">Статистика</div>
+				<div class="clear"></div>
+				<div class="minblock_users clear_fix">
+					<span class="count_stats">32</span>
+					<span class="more_stats">Зарегистрировано</span>
+				</div>
+				<div class="minblock_users clear_fix">
+					<span class="count_stats">2,040.00</span>
+					<span class="more_stats">Баланс системы (Руб.)</span>
+				</div>
+				<div class="minblock_users clear_fix">
+					<span class="count_stats">20,400.00</span>
+					<span class="more_stats">Пополнили (Руб.)</span>
+				</div>
+				<div class="minblock_users clear_fix">
+					<span class="count_stats">11,080.00</span>
+					<span class="more_stats">Вывели (Руб.)</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="two_block">
+				<div class="title_miniblock_general">Почему именно мы?</div>
+				<div class="minblock_profit_all">
+					<div class="minblock_profit">
+						<div class="icon_profit">
+							<span class="icon_safe"></span>
+						</div>
+						<div class="minblock_title">Вклады и проценты</div>
+						<div class="minblock_desc">Принимаем от 50 до 5.000 рублей на 24 часа. Вложив на сутки Вы получаете обратно свой вклад +30%.</div>
+					</div>
+					<div class="minblock_profit">
+						<div class="icon_profit">
+							<span class="icon_clock"></span>
+						</div>
+						<div class="minblock_title">Круглосуточная поддержка</div>
+						<div class="minblock_desc">Круглосуточная техническая поддержка на сайте. Если у Вас есть вопрос, вы можете написать нам сообщение.</div>
+					</div>
+					<div class="minblock_profit">
+						<div class="icon_profit">
+							<span class="icon_calc"></span>
+						</div>
+						<div class="minblock_title">Партнерская программа</div>
+						<div class="minblock_desc">Партнерское вознаграждение 10% от каждого вклада приведенного Вами участника.</div>
+					</div>
+					<div class="minblock_profit">
+						<div class="icon_profit">
+							<span class="icon_stat"></span>
+						</div>
+						<div class="minblock_title">Статистика проекта</div>
+						<div class="minblock_desc">У нашего проекта открытая статистика. Любой желающий может посмотреть вклады участников. Для авторизированных пользователей, статистика расширена.</div>
+					</div>
+				</div>
+			</div>
+			<div class="block_browser">
+				<div class="browser"></div>
+			</div>
+			<div class="five_block">
+				<div class="title_miniblock_general">Что внутри?</div>
+				<div class="favourite_block_all">
+					<div class="favourite_block">
+						<div class="icon_flat">
+							<span class="icon_user"></span>
+						</div>
+						<div class="title_favourite_block">Реферальная система</div>
+						<div class="about_favourite_block">Реферальная система - это пожалуй самый лучший способ привлечения пользователей на тот или иной проект. Как вы понимаете, чем больше пользователей, тем больше доход.</div>
+					</div>
+					<div class="favourite_block">
+						<div class="icon_flat">
+							<span class="icon_dashboard"></span>
+						</div>
+						<div class="title_favourite_block">Удобный личный кабинет</div>
+						<div class="about_favourite_block">Мы расположили все элементы так, чтобы вам было удобно ими пользоваться. Вас ждет удобный интерфейс и новые возможности.</div>
+					</div>
+					<div class="favourite_block">
+						<div class="icon_flat">
+							<span class="icon_good"></span>
+						</div>
+						<div class="title_favourite_block">Производительность сайта</div>
+						<div class="about_favourite_block">Мы перешли на новый сервер! Наконец-то мы можем порадовать вас этой новостью! Новый 8-ядерный сервер способен обслуживать одновременно огромное количество пользователей, и обещает быть стабильным и быстрым.</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="three_block clear_fix">
+				<div class="btn_all">
+					<div class="btn btn_rules"><a href="/?page=advert">Правила и соглашение</a></div>
+				</div>
+			</div>		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		</div>
+		<div class="six_block">
+			<div class="footer">
+	<span class="copyright">
+		<a href="/?page=reviews" target="_blank">Отзывы (0)</a>
+				<a href="/?page=screens">Скриншоты (0)</a>
+		<a href="/?page=advert">Правила</a>
+		<a href="/?page=instruction">Инструкция</a>
+		<a href="/" target="_blank">VK</a>
+	</span>
+</div>		</div>
+	</div>

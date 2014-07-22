@@ -1,0 +1,370 @@
+html {
+margin:0;
+padding:0;
+}
+body {
+margin:0;
+padding:0;
+background:url(../images/index_bg.jpgg') top center no-repeat;
+word-wrap: break-word;
+background-attachment: fixed;
+font-weight: normal;
+margin:0 auto;
+}
+
+images {border:none;}
+
+select,input,textarea {outline:none;}
+
+.index_menu {
+width:698px;
+height:43px;
+padding-left:12px;
+background:url('../images/index_menu.png') no-repeat;
+}
+
+.index_menu a {
+display:block;
+height:43px;
+line-height:43px;
+float:left;
+font-family:times new roman;
+font-size:19px;
+color:rgb(255, 255, 255);
+text-decoration:none;
+padding-right:8px;
+padding-left:8px;
+background:url('../img/index_menu_a.png') right center no-repeat;
+}
+
+.index_menu a:hover {
+text-decoration:underline;
+}
+
+.index_marketing {
+height:200px;
+line-height:20px;
+padding-left:88px;
+font-family:times new roman;
+font-size:15px;
+font-weight:bold;
+color:#663300;
+background:url('../images/index_marketing.png') no-repeat;
+}
+
+.index_menu_2 {
+width:710px;
+margin-top:10px;
+padding-left:15px;
+background:url('../img/index_menu_2.png') no-repeat;
+}
+
+.index_menu_2_a  {
+height:70px;
+text-align:center;
+vertical-align:top;
+line-height:70px;
+}
+
+.index_menu_2_a a {
+font-family:times new roman;
+font-size:19px;
+font-weight:normal;
+color:rgb(255, 255, 255);
+text-decoration:none;
+}
+
+.index_menu_2_a a:hover {
+text-decoration:underline;
+}
+
+.index_menu_2_skype {
+width:215px;
+}
+
+.index_menu_2_skype a {
+display:block;
+margin-left:80px;
+width:110px;
+height:70px;
+text-decoration:none;
+}
+
+.osnova_left {
+width:250px;
+vertical-align:top;
+}
+
+.osnova_table {
+margin-top:5px;
+}
+
+.osnova_title_1 {
+height:40px;
+background:url('../images/osnova_title_1.png') no-repeat;
+}
+
+.osnova_stat {
+width:250px;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:15px;
+padding-right:15px;
+background:url('../images/osnova_polosa.png');
+}
+
+.osnova_stat_left {
+height:23px;
+line-height:23px;
+border-bottom:1px dashed #e0e0e0;
+}
+
+.osnova_stat_left span {
+font-family:Times New Roman;
+font-size:14px;
+font-weight:bold;
+}
+
+.osnova_stat_right {
+text-align:right;
+height:23px;
+line-height:23px;
+border-bottom:1px dashed #e0e0e0;
+}
+
+.osnova_stat_right font {
+padding:1px;
+padding-left:5px;
+padding-right:5px;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+font-family:Times New Roman;
+font-size:14px;
+font-weight:bold;
+color:#ffffff;
+background:rgb(98, 187, 70);
+}
+
+.osnova_title_2 {
+height:40px;
+background:url('../images/osnova_title_2.png') no-repeat;
+}
+
+.osnova_title_2_2 {
+height:40px;
+background:url('../images/osnova_title_2_2.png') no-repeat;
+}
+
+.osnova_title_3 {
+height:40px;
+background:url('../images/osnova_title_3.png') no-repeat;
+}
+
+.osnova_invest {
+width:250px;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:15px;
+padding-right:15px;
+background:url('../images/osnova_polosa.png');
+}
+
+.osnova_invest_left {
+height:23px;
+line-height:23px;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+color:#3B7DC7;
+border-bottom:1px dashed #e0e0e0;
+}
+
+.osnova_invest_right {
+text-align:right;
+line-height:23px;
+border-bottom:1px dashed #e0e0e0;
+}
+
+.osnova_invest_right font {
+padding:1px;
+padding-left:5px;
+padding-right:5px;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+color:#ffffff;
+background:#8FD514;
+}
+
+.osnova_title_4 {
+height:40px;
+background:url('../images/osnova_title_4.png') no-repeat;
+}
+
+.osnova_paidout {
+width:250px;
+padding-top:5px;
+padding-bottom:5px;
+padding-left:15px;
+padding-right:15px;
+background:url('../images/osnova_polosa.png');
+}
+
+.osnova_paidout_left {
+height:23px;
+line-height:23px;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+color:#3B7DC7;
+border-bottom:1px dashed #e0e0e0;
+}
+
+.osnova_paidout_right {
+text-align:right;
+line-height:23px;
+border-bottom:1px dashed #e0e0e0;
+}
+
+.osnova_paidout_right font {
+padding:1px;
+padding-left:5px;
+padding-right:5px;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+color:#333333;
+background:#FFD738;
+}
+
+.osnova_title_5 {
+height:10px;
+background:url('../images/osnova_title_5.png') no-repeat;
+}
+
+.osnova_vhod {
+padding-left:20px;
+padding-right:15px;
+padding-top:8px;
+background:url('../images/osnova_polosa.png') ;
+}
+
+.osnova_vhod_input_login {
+width:185px;
+height:30px;
+line-height:30px;
+border:none;
+padding-left:30px;
+font-family:Times New Roman;
+font-size:17px;
+font-weight:bold;
+color:#996633;
+background:url('../images/osnova_vhod_input_login.png') no-repeat;
+}
+
+.osnova_vhod_input_pass {
+width:185px;
+height:30px;
+margin-top:10px;
+margin-bottom:15px;
+line-height:30px;
+border:none;
+padding-left:30px;
+font-family:Times New Roman;
+font-size:16px;
+font-weight:bold;
+color:#996633;
+background:url('../images/osnova_vhod_input_pass.png') no-repeat;
+}
+
+.osnova_vhod_registration {
+display:block;
+width:123px;
+height:27px;
+margin-right:5px;
+text-decoration:none;
+background:url('../images/osnova_vhod_reg.png') no-repeat;
+}
+
+
+.osnova_vhod_enter {
+display:block;
+width:78px;
+height:27px;
+margin-right:5px;
+text-decoration:none;
+background:url('../images/osnova_vhod_enter.png') no-repeat;
+}
+
+.wrong_lq {
+padding-bottom:10px;
+text-align:center;
+font-family:Times New Roman;
+font-size:16px;
+color:#990000;
+}
+
+.cabinet {
+padding-top:10px;
+padding-left:15px;
+padding-bottom:10px;
+background: url('../images/osnova_polosa.png');
+}
+
+.cabinet_a {
+display:block;
+width:210px;
+margin-bottom:3px;
+padding-left:10px;
+line-height:30px;
+font-family:Times New Roman;
+font-size:17px;
+color:#663300;
+text-decoration:none;
+background:url('../images/cabinet_a.png');
+}
+
+.cabinet_b {
+display:block;
+width:210px;
+margin-bottom:3px;
+line-height:30px;
+padding-left:10px;
+font-family:Times New Roman;
+font-size:17px;
+color:#FFFFFF;
+text-decoration:none;
+background:url('../images/cabinet_c.png');
+}
+
+.cabinet_b:hover {
+color:#663300;
+background:url('../images/cabinet_a.png');
+text-decoration:none;
+}
+
+.osnova_right {
+width:710px;
+padding-left:20px;
+vertical-align:top;
+background:white;
+}
+
+
+.footer {
+width:980px;
+height:35px;
+text-align:center;
+font-family:Times New Roman;
+font-size:17px;
+font-weight:bold;
+color:#996633;
+background:url('../images/footer.png') top no-repeat;
+}

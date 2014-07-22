@@ -1,0 +1,754 @@
+/* REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS REFS */
+
+.refs_link {
+margin-top:8px;
+margin-bottom:15px;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family: arial;
+font-size:18px;
+color:#ffffff;
+}
+
+.vyvesti_stat_sum{width: 160px;
+line-height: 28px;
+padding-left: 0px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;padding-left: 55px;}
+
+.vyvesti_stat_date{width: 160px;
+line-height: 28px;
+padding-left: 0px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;}
+
+.vyvesti_stat_batch_1{width: 125px;
+line-height: 28px;
+padding-left: 40px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;background: url('../images/cabinet/stat_batch_1.png') no-repeat;}
+
+
+.refs_stat {
+line-height:20px;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family: arial;
+font-size:14px;
+color:#ffffff;
+}
+
+.refs_stat font {
+color:#5d8fd1;
+}
+
+.refs_who {
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#0088D5;
+}
+
+.refs_rb {
+margin-top:15px;
+margin-bottom:15px;
+padding:5px;
+line-height:18px;
+font: 15px sans-serif, tahoma, arial;
+color:#333333;
+/*background:#FAC741;*/
+border:1px dashed #AC9B8D;
+}
+
+.refs_t {
+margin-top:15px;
+margin-bottom:10px;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#ffffff;
+}
+
+.refs_refback {
+line-height:20px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#663300;
+}
+
+.refs_input {
+width:38px;
+height:26px;
+line-height:26px;
+border:none;
+padding-left:5px;
+padding-right:5px;
+font-family:arial;
+font-size:16px;
+font-weight:bold;
+color:#3EAA30;
+background:url('../images/cabinet/refs_input.png') no-repeat;
+}
+
+.refs_button {
+display:block;
+width:120px;
+height:30px;
+margin-left:10px;
+margin-right:15px;
+line-height:30px;
+text-align:center;
+font-family:times new roman;
+font-size:18px;
+color:#663300;
+text-decoration:none;
+background:url('../images/cabinet/refs_button.gif') no-repeat;
+}
+
+.refs_button:hover {
+text-decoration:underline;
+}
+
+/* WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL WITHDRAWAL */
+
+.withdrawal_balance {
+padding-right:30px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#663300;
+}
+
+.withdrawal_sum {
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#663300;
+}
+
+.withdrawal_input {
+width:78px;
+height:26px;
+line-height:26px;
+border:none;
+padding-left:5px;
+padding-right:5px;
+font-family:times new roman;
+font-size:16px;
+font-weight:bold;
+color:#3EAA30;
+background:url('../images/cabinet/withdrawal_input.png') no-repeat;
+}
+
+.withdrawal_button {
+display:block;
+width:125px;
+height:32px;
+line-height:32px;
+margin-left:15px;
+margin-bottom:5px;
+text-align:center;
+font-family:times new roman;
+font-size:19px;
+color:#333;
+text-decoration:none;
+background:url('../images/cabinet/withdrawal_button.png');
+}
+
+.withdrawal_button:hover {
+text-decoration:underline;
+}
+
+.withdrawal_withed_pended {
+text-align:center;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#ffffff;
+}
+
+.withdrawal_stat {
+height:32px;
+color:#fff;
+background: url('../images/cabinet/withdrawal_stat.png') no-repeat;
+font-size: 16px;
+font-family: arial;
+}
+
+.withdrawal_stat_sum {
+width:145px;
+line-height:28px;
+padding-left:10px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+}
+
+.withdrawal_stat_date {
+width:170px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+}
+
+.withdrawal_stat_batch {
+width:235px;
+}
+
+.withdrawal_stat_batch a {
+font-family:times new roman;
+font-size:12px;
+font-weight:bold;
+color:#009000;
+text-decoration:underline;
+}
+
+.withdrawal_stat_batch a:hover {
+text-decoration:none;
+}
+
+.withdrawal_stat_batch_1 {
+width:100px;
+padding-left:30px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#EC7600;
+background:url('../images/cabinet/stat_batch_1.png') no-repeat;
+}
+
+.withdrawal_stat_batch_2 {
+width:100px;
+padding-left:30px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+background:url('../images/cabinet/stat_batch_2.png') no-repeat;
+}
+
+.withdrawal_info {
+text-align:center;
+margin-bottom:10px;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#ffffff;
+}
+
+.withdrawal_error {
+margin-top:15px;
+margin-bottom:10px;
+line-height:40px;
+font-family:times new roman;
+font-size:16px;
+font-weight:bold;
+color:#ff0000;
+text-align:center;
+background:#FFE8E8;
+border:1px dashed #B00000;
+}
+
+.withdrawal_success {
+margin-top:15px;
+margin-bottom:10px;
+line-height:35px;
+font-family:times new roman;
+font-size:15px;
+font-weight:bold;
+color:#2F7113;
+text-align:center;
+background:#BAEFA3;
+border:1px dashed #2F7113;
+}
+
+/* INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST INVEST */
+
+.invest_title {
+height:32px;
+line-height:32px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#3EAA30;
+}
+
+.invest_stoped {
+margin-top:15px;
+margin-bottom:10px;
+line-height:40px;
+font-family:times new roman;
+font-size:16px;
+font-weight:bold;
+color:#ff0000;
+text-align:center;
+background:#FFE8E8;
+border:1px dashed #B00000;
+}
+
+.invest_nomore {
+margin-top:15px;
+margin-bottom:10px;
+line-height:40px;
+font-family:times new roman;
+font-size:16px;
+font-weight:bold;
+color:#333333;
+text-align:center;
+background:#FAC741;
+border:1px dashed #F2872B;
+}
+
+.invest_info {
+line-height:22px;
+padding-bottom:20px;
+font-family:times new roman;
+font-size:14px;
+color:#000000;
+}
+
+.invest_lim_sum {
+margin-bottom:20px;
+line-height:40px;
+font-family:times new roman;
+font-size:16px;
+font-weight:bold;
+color:#333333;
+text-align:center;
+background:#FAC741;
+border:1px dashed #F2872B;
+}
+
+.invest_can_inv {
+margin-bottom:20px;
+line-height:40px;
+text-align:center;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#ffffff;
+}
+
+.invest_input {
+width:195px;
+height:40px;
+vertical-align:middle;
+line-height:30px;
+border:none;
+padding-left:30px;
+padding-right:5px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#77AF1B;
+background:url('../images/cabinet/invest_input.png') left center no-repeat;
+}
+
+.invest_plan {
+vertical-align:middle;
+padding-left:5px;
+padding-right:20px;
+background:url('../images/cabinet/plan_select.png') left center no-repeat;
+}
+
+.invest_plan select {
+width:160px;
+height:22px;
+border:none;
+font-family:times new roman;
+font-size:14px;
+line-height:26px;
+}
+
+.invest_button {
+display:block;
+width:120px;
+height:30px;
+line-height:32px;
+text-align:center;
+font-family:times new roman;
+font-size:18px;
+color:#333333;
+text-decoration:none;
+background:url('../images/cabinet/invest_button.png') no-repeat;
+}
+
+.invest_button:hover {
+text-decoration:underline;
+}
+
+.invest_2 {
+display:block;
+width:120px;
+height:30px;
+margin-right:5px;
+line-height:30px;
+text-align:center;
+font-family:times new roman;
+font-size:18px;
+color:#ffffff;
+text-decoration:none;
+background:url('../images/cabinet/invest_2.png') no-repeat;
+}
+
+.invest_2:hover {
+text-decoration:underline;
+}
+
+.invest_stat {
+height:32px;
+padding-left:10px;
+font-family:times new roman;
+font-size:16px;
+color: #fff;
+background: url('../images/cabinet/invest_stat.png') no-repeat;
+font-family: arial;
+}
+
+.invest_stat_sum {
+width:125px;
+line-height:28px;
+padding-left:10px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+}
+
+.invest_stat_date {
+width:155px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+}
+
+.invest_stat_plan {
+width:100px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#2969B1;
+}
+
+.invest_stat_batch {
+width:235px;
+font-family:times new roman;
+font-size:12px;
+font-weight:bold;
+color:#009000;
+}
+
+.invest_stat_batch a {
+font-family:times new roman;
+font-size:12px;
+font-weight:bold;
+color:#ff0000;
+text-decoration:underline;
+}
+
+.invest_stat_batch a:hover{
+text-decoration:none;
+}
+
+.invest_stat_batch_1 {
+width:105px;
+padding-left:30px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#EC7600;
+background:url('../images/cabinet/stat_batch_1.png') 0px 6px no-repeat;
+}
+
+.invest_stat_batch_2 {
+width:105px;
+padding-left:30px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+background:url('../images/cabinet/stat_batch_2.png') 0px 2px no-repeat;
+}
+
+/* DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS DEPOSITS */
+
+.deposits_balance {
+width:240px;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font-family:times new roman;
+font-size:18px;
+font-weight:bold;
+color:#ffffff;
+}
+
+.deposits_stat {
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+line-height:20px;
+font: 13px sans-serif, tahoma, arial;
+color:#ffffff;
+}
+
+.deposits_stat font {
+color:#5d8fd1;
+}
+
+.deposits_error {
+margin-bottom: 10px;
+line-height: 30px;
+font-family: times new roman;
+font-size: 16px;
+font-weight: bold;
+color: #ff0000;
+text-align: center;
+background: #FFE8E8;
+border: 1px dashed #B00000;
+}
+
+.deposits_can {
+margin-left:2px;
+background: red;
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+margin-bottom:10px;
+text-align:center;
+font-family:times new roman;
+font-size:16px;
+font-weight:bold;
+color:#ffffff;
+}
+
+.deposits_input {
+    width: 170px;  height: 30px;  line-height: 30px;  border: none;  padding-left: 30px;  font-family: arial;  font-size: 16px;  
+    color: #009000;  background: #F0F0F0;  -webkit-transition: all 0.3s ease;  -moz-transition: all 0.3s ease;  -o-transition: all 0.3s ease;  transition: all 0.3s ease;  
+    border: 2px solid #E6E6E6;  border-radius: 2px;
+}
+
+.deposits_output {
+width:140px;
+height:50px;
+line-height:35px;
+border:none;
+padding-left:30px;
+font-family:arial;
+font-size:16px;
+font-weight:bold;
+color:#77AF1B;
+background:url('../images/cabinet/deposits_output.png') left center no-repeat;
+}
+
+.deposits_button {
+display:block;
+margin-left:27px;
+width:120px;
+height:30px;
+line-height:32px;
+text-align:center;
+font-family:times new roman;
+font-size:18px;
+color:#333333;
+text-decoration:none;
+background:url('../images/cabinet/invest_button.png') no-repeat;
+}
+
+.deposits_button:hover {
+text-decoration:underline;
+}
+
+.deposits_date {
+margin-top:30px;
+margin-bottom:30px;
+text-align:center;
+width:300px;
+background:rgb(76, 135, 199);
+border-radius:6px;
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+padding:5px;
+padding-left:10px;
+padding-right:10px;
+font: 15px sans-serif, tahoma, arial;
+font-weight: bold;
+color:#ffffff;
+margin: 0px 0px 10px 0px;
+}
+
+.deposits_table {
+height:32px;
+font-family:times new roman;
+font-size:15px;
+font-weight:bold;
+color: #000000;
+background:url('../images/cabinet/deposits_table.png') no-repeat;
+font-family: arial;
+}
+
+.deposits_date_1 {
+width:117px;
+padding-left:10px;
+height:32px;
+font-family:times new roman;
+font-size:12px;
+font-weight:bold;
+color:#009000;
+}
+
+.deposits_date_2 {
+width:120px;
+height:32px;
+font-family:times new roman;
+font-size:12px;
+font-weight:bold;
+color:#009000;
+}
+
+.deposits_success{margin-bottom:10px;
+line-height:35px;
+font-family:arial;
+font-size:15px;
+font-weight:bold;
+color:#2F7113;
+text-align:center;
+background:#BAEFA3;
+border:1px dashed #2F7113;}
+
+.deposits_sum_1 {
+width:170px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+}
+
+.vyvesti_stat_batch_2{width: 107px;
+padding-left: 40px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;
+background: url('../images/cabinet/stat_batch_2.png') no-repeat;}
+
+.invest_count_date{
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;
+line-height: 28px;}
+.invest_count_sum{padding-left: 40px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;}
+.invest_count_sum_2{padding-left: 100px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;padding-right: 58px;}
+.vklady_count_zam{padding-left: 30px;
+font-family: times new roman;
+font-size: 14px;
+font-weight: bold;
+color: #009000;background: url('../images/cabinet/stat_batch_1.png') 0px 6px no-repeat;}
+.vklady_count_raz{
+    width: 107px;  
+    padding-left: 30px;  font-family: times new roman;  font-size: 14px;  font-weight: bold;  color: #009000;  background: url('../images/cabinet/stat_batch_2.png') 0px 2px no-repeat;
+}
+}
+.deposits_sum_2 {
+width:130px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+}
+.left_menu_stat{margin: 250px 0px 0px 0px;
+font-size: 12px;
+border: 1px solid #CECECE;
+padding-left: 15px;
+padding-bottom: 15px;
+border-radius: 5px;
+line-height: 20px;
+max-width: 220px;}
+
+.deposits_status_zam {
+width:105px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+padding-left:30px;
+background:url('../images/cabinet/stat_batch_1.png') no-repeat;
+}
+
+.deposits_status_raz {
+width:105px;
+font-family:times new roman;
+font-size:14px;
+font-weight:bold;
+color:#009000;
+padding-left:30px;
+background:url('../images/cabinet/stat_batch_2.png') no-repeat;
+}
