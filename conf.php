@@ -2,7 +2,6 @@
 mysql_connect('localhost','a107036_qiwi','3T9Z6bNvej');
 mysql_select_db('a107036_qiwi');
 
-
 $start_data='10.07.2014 20:00'; // дюрю ярюпрю
 $time_move=0; // вюянбни онъя +- вюяш
 

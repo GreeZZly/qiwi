@@ -63,7 +63,7 @@ define('SID',session_id());
 // ‘”Õ ÷»ﬂ ¬’Œƒ¿
 
 function login($uname,$qiwi){
-$q=mysql_query("SELECT uid,login,qiwi,ref,name FROM users WHERE name='$uname' AND qiwi='$qiwi';");
+$q=mysql_query("SELECT uid,login,qiwi,ref,name FROM users WHERE name='$uname' AND qiwi='$qiwi';"); //my
 $user=mysql_fetch_row($q);
 
 if(!empty($user)) {
@@ -73,7 +73,6 @@ $_SESSION['login']=$user[1];
 $_SESSION['qiwi']=$user[2];
 $_SESSION['ref']=$user[3];
 $_SESSION['name']=$user[4]; //my
-
 $_SESSION['can']=1;
 return true;
 }
@@ -98,7 +97,7 @@ else { define('USER_LOGGED',false); }
 // œ–»®Ã ƒ¿ÕÕ€’ »« ‘Œ–Ã€
 
 if (!empty($_POST['name']) && !empty($_POST['qiwi'])) { //ÃŒ≈
-// $_POST['name']=preg_replace("#[^a-z\_\-0-9]+#i",'',$_POST['name']);//ÃŒ≈
+// $_POST['name']=preg_replace("#[^a-z\_\-0-9]+#i",'',$_POST['name']);
 $_POST['qiwi']=preg_replace('#[^a-zA-Z\-\_0-9]+#','',$_POST['qiwi']);
 $_POST['qiwi']=md5($_POST['qiwi']);
 if(login($_POST['name'],$_POST['qiwi'])){ header('Refresh: 0'); exit; }

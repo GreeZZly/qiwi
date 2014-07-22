@@ -178,6 +178,37 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 				</div>
 			</div>
 			<div class="block_browser">
+                              <center>
+<!--
+                              <table border="1">
+                            <tr><td>login </td><td>summa</td> </tr> 
+                            <?php 
+                            mysql_free_result();
+                             $resultm = mysql_query("SELECT DISTINCT `osum2`,`ologin` FROM `operations`");
+                             while($myrowm = mysql_fetch_array($resultm)){
+                             $summ[$myrowm[1]] = $myrowm[0];
+                              
+                              }
+                               arsort($summ);
+                               $i=0;
+                              
+                                foreach($summ as $name => $sum)
+                                {
+                                  if($i>10)
+                                  break;
+                                   else
+                                   echo "<tr><td>".$name."</td><td>".$sum."</td></tr>";
+                                    $i++;
+                                     }
+                                   
+                               
+                            
+                            
+
+?>
+                                  </table>
+                                 </center>
+-->
 				<div class="browser"></div>
 			</div>
 			<div class="five_block">
