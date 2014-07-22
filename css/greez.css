@@ -1,0 +1,44 @@
+#settings_table {
+	/*float: left;*/
+	border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cab_title {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#settings_table tr:first-child{
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.cab_row_title {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	padding: 15px 0;
+	/*border-bottom: 1px solid #dfdfdf;*/
+	/*margin-bottom: 10px;*/
+	/*display: block;*/
+}
+
+#settings_table input {
+	line-height: 30px;
+}
+
+#settings_table .btn_log {
+	/*margin-top: 20px;*/
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+#right_side {
+	position: relative;
+}
+.error {
+	
+}

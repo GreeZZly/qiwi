@@ -83,7 +83,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 
 
 
-<table width="100%" style="vertical-align: top;">
+<table style="vertical-align: top;"> <!--  width="100%" -->
 <tbody><tr style="vertical-align: top;">
 <td style="vertical-align: top;">
 
@@ -165,9 +165,48 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 <br>Активно: <font color="#FF860D"><?php echo mysql_num_rows($refsq); ?> РЕФ</font>
 </div>
 </td>
-<td>
+<td id="right_side">
+	<!-- MY -->
+	<div class="deposits_error hidden">ОШИБКА БЛЯ</div>
+	<form id="settings_form" action="/" method="POST">
+		<table id="settings_table">
+			<tr>
+				<td>
+					<div  class="cab_title">Настройки</div>
+				</td>
+			</tr>
+		<tr>
+			<td colspan="2" class="cab_row_title">Кошелек</td>
+		</tr>	
+		<tr>
+			<td>QIWI-кошелек:</td>
+			<td><input type="text" name="settings_qiwi" value="<?echo $u_login;?>"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="cab_row_title">Пароль</td>
+		</tr>
+		<tr>
+			<td>Старый пароль:</td>
+			<td><input type="password" name="settings_oldpass" value=""></td>
+		</tr>
+		<tr>
+			<td>Новый пароль:</td>
+			<td><input type="password" name="settings_newpass" id="settings_newpass" value=""></td>
+		</tr>
+		<tr>
+			<td>Подтверждение:</td>
+			<td><input type="password" name="settings_newconfirm" id="settings_confirm" value=""></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="cab_row_title">
+				<input type="submit" class="btn_log" value="Сохранить">
+			</td>
+		</tr>
+		</table>
+	</form>
+</td>
 
-
+<!-- END MY -->
 
 
 

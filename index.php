@@ -28,6 +28,12 @@ if($d_max>$d_istop){ $d_max=$d_istop; }
 }
 }
 
+// ======================================== »«Ã≈Õ≈Õ»≈ Õ¿—“–Œ≈  =====================================================================
+
+function change_data(){
+	$new_qiwi = $_POST('settings_qiwi');
+	$new_pass = $_POST('settings_newpass');
+}
 
 // ======================================== IP ====================================================================================
 
@@ -163,8 +169,12 @@ elseif(in_array($uu,$ux2)){ $ut='”˜‡ÒÚÌËÍ'; }
 <link rel="stylesheet" href="css/pages.css" type="text/css">
 <link rel="stylesheet" href="css/cabinet.css" type="text/css">
 <link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/greez.css" type="text/css">
 <link href="../fonts.googleapis.com/css-family=Open+Sans-300,400,600.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/greez_script.js"></script>
 <script type="text/javascript" src="js/jquery.localscroll.js"></script>
 <script type="text/javascript" src="js/jquery.scrollto.js"></script>
 <script type="text/javascript">
@@ -207,3 +217,5 @@ if($nay!=1){ include ('pages/main.php'); }
 	</div>
 
 </html>
+
+
