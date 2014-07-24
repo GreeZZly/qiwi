@@ -60,7 +60,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 		</div>
 						<div class="menu_header_right">
 			<ul>
-				<li><span>Добро пожаловать, <?echo $u_name;?></span></li>
+				<li><span>Добро пожаловать, <?echo $u_login;?></span></li>
 				<li><a href="/logout.php">Выйти</a></li>
 			</ul>
 		</div>			

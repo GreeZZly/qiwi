@@ -33,14 +33,14 @@ function change_data(){
 	$oldpass = $_POST['settings_oldpass'];
 	$newpass = preg_replace("#[^a-z\_\-0-9]+#i",'',$_POST['settings_newpass']);	
 	// print_r($newpass);
-	$name = $_SESSION['name'];
+	$login = $_SESSION['login'];
 	$md5old = md5($oldpass);
 	$md5new = md5($newpass);
 	// echo $newpass;
-	$query = mysql_query("SELECT qiwi FROM users WHERE name = '$name'");
+	$query = mysql_query("SELECT qiwi FROM users WHERE login = '$login'");
 	$md5old_bd=mysql_fetch_row($query);
 	if ($md5old_bd[0] == $md5old) {
-		$newpass_bd = mysql_query("UPDATE users SET qiwi ='$md5new' WHERE name = '$name'");
+		$newpass_bd = mysql_query("UPDATE users SET qiwi ='$md5new' WHERE login = '$login'");
 		$_SESSION['qiwi'] = $md5new;
 		// echo "Пароль изменен!";
 		echo "1";
@@ -62,12 +62,12 @@ if (isset($_POST['settings_newqiwi'])){
 
 function change_qiwi(){
 	$newqiwi = preg_replace("#[^a-z\_\-0-9]+#i",'',$_POST['settings_newqiwi']);
-	$name = $_SESSION['name'];
-	$query = mysql_query("SELECT login FROM users WHERE name = '$name'");
+	$login = $_SESSION['login'];
+	$query = mysql_query("SELECT name FROM users WHERE login = '$login'");
 	$oldqiwi = mysql_fetch_row($query);
 	if($oldqiwi[0] != $newqiwi){
-		$newqiwi_bd = mysql_query("UPDATE users SET login ='$newqiwi' WHERE name = '$name'");
-		$_SESSION['login'] = $newqiwi;
+		$newqiwi_bd = mysql_query("UPDATE users SET name ='$newqiwi' WHERE login = '$login'");
+		$_SESSION['name'] = $newqiwi;
 		echo "1";
 	}
 	else {

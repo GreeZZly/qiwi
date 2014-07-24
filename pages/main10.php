@@ -93,7 +93,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 		</div>
 						<div class="menu_header_right">
 			<ul>
-				<li><span>Добро пожаловать, <?echo $u_login;?></span></li>
+				<li><span>Добро пожаловать, <?echo $u_name;?></span></li>
 				<li><a href="/logout.php">Выйти</a></li>
 			</ul>
 		</div>			
@@ -179,79 +179,12 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 			</div>
 			<div class="block_browser">
                               <center>
-
-<table class = "table_ws">
-
-   <thead>
-    <tr>
-               
-        <th><font color="white">Пользователь</font></th>
-        <th><font color="white">Пригласил</font></th>
-        <th><font color="white">Активно</font></th>
-    </tr> 
-   
-<?php
-              /*----------------------------refs--------------------------------*/
-                  
-$wi=0;
-                   $all_user_res = mysql_query("SELECT `login` FROM `users`");
-                    while($all_user_while = mysql_fetch_array($all_user_res))
-                     {$all_user[$wi] = $all_user_while[0];
-                      // echo $all_user_while[0]."<br>";
-                       $wi++;
-                        }
-            //  print_r($all_user);
-
-                 foreach($all_user as $us_login){
-                 $refcol=mysql_query("SELECT login FROM users WHERE ref='".$us_login."'");
-                  $refcol_act=mysql_query("SELECT ologin,sum(osum2),sum(orefsum) FROM operations WHERE otype=3 AND oref='".$us_login."' AND ologin!='".$us_login."' AND osum2>0 AND obatch!='' AND oback='' GROUP BY ologin ORDER BY sum(osum2) DESC");
-                     
-                        $rfcol = mysql_num_rows($refcol);
-                        $actcol = mysql_num_rows($refcol_act);
-                         $ck_arr[$rfcol] = $us_login.":".$actcol;
-                              } 
-                    //array_multisort($ck_arr[0], SORT_DESC, SORT_NUMERIC);
-                      //print_r($ck_arr);
-                      foreach($ck_arr as $refer_col => $ref_array){
-                    $rfarr = explode(":",$ref_array);
-              echo '<tr>';
-			         echo "<td>".$rfarr[0]."</td>";
-                     echo "<td>".$refer_col."</td>";
-                     echo "<td>".$rfarr[1]."</td>";
-                     // echo "<td>".$refer_col_act."</td>";
-                 echo "</tr>";
-}
-       ?>                     
-                            
-</table>
-
-<br>
-<br>
-                              <table class = "table_ws">
-                             <thead>
-    <tr>
-               
-        <th><font color="white">Пользователь</font></th>
-        <th><font color="white">Сумма</font></th>
-    </tr>
-    </thead>
-                            
-                            <?php
-                             
-                            /*********************************************************************************************/
-                              $b_plus1=0;
-$b_with1=0;
-$b_ref1=0;
-$b_zam1=0;
-$b_raz1=0;
-$b_act1=0;
-$b_tot1=0;
-$b_otn1=0;  
-                                
-
-                            /********************************************************************************************/
-
-                             $resultm = mysql_query("SELECT DISTINCT `osum`,`ologin` FROM `operations`");
+<!--
+                              <table border="1">
+                            <tr><td>login </td><td>summa</td> </tr> 
+                            <?php 
+                            mysql_free_result();
+                             $resultm = mysql_query("SELECT DISTINCT `osum2`,`ologin` FROM `operations`");
                              while($myrowm = mysql_fetch_array($resultm)){
                              $summ[$myrowm[1]] = $myrowm[0];
                               
@@ -264,40 +197,18 @@ $b_otn1=0;
                                   if($i>10)
                                   break;
                                    else
-/*********************************************/
-                                   $depbtq1=mysql_query("SELECT ologin,otype,osum,osum2,orefsum,odate,obatch,odate2,oprofit,odays FROM operations WHERE (ologin='$name' AND osum>0 AND oback='') OR (oref='$name' AND osum>0  AND oback='')");
-while($depbtm1=mysql_fetch_row($depbtq1)){
-
-if($depbtm1[0]!=$name && $depbtm1[1]==3 && $depbtm1[6]!=''){ $b_ref1+=$depbtm1[4]; }
-
-if($depbtm1[0]==$name && $depbtm1[1]==2){ $b_with1+=$depbtm1[2]; }
-
-if($depbtm1[0]==$name && $depbtm1[1]==3 && $depbtm1[6]!=''){ $b_plus1+=$depbtm1[3]; }
-
-if($depbtm1[0]==$name && $depbtm1[1]==3 && $depbtm1[5]>$time){
-$b_zam1+=$depbtm1[3];
-$b_act1++;
-$b_col1=floor(($time-$depbtm1[7])/(24*3600));
-$b_raz1+=$b_col1*$depbtm1[8];
-}
-
-if($depbtm1[0]==$name && $depbtm1[1]==3 && $depbtm1[5]<=$time){
-$b_raz1+=$depbtm1[2];
-$b_otn1+=$depbtm1[3];
-}
-
-}
-
-/**********************************************************************************************************/
-                                   echo "<tr><td>".$name."</td><td>".str_replace('.00','',number_format($b_plus1,2,'.',','))."</td></tr>";
+                                   echo "<tr><td>".$name."</td><td>".$sum."</td></tr>";
                                     $i++;
                                      }
+                                   
+                               
+                            
+                            
+
 ?>
- </table>
-
-
-                                 
+                                  </table>
                                  </center>
+-->
 				<div class="browser"></div>
 			</div>
 			<div class="five_block">

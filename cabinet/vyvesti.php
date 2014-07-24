@@ -60,7 +60,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 		</div>
 						<div class="menu_header_right">
 			<ul>
-				<li><span>Добро пожаловать, <?echo $u_name;?></span></li>
+				<li><span>Добро пожаловать, <?echo $u_login;?></span></li>
 				<li><a href="/logout.php">Выйти</a></li>
 			</ul>
 		</div>			
@@ -272,7 +272,7 @@ if(!empty($w_s)){ echo '<div class="deposits_success">Заявка на вывод '.$sum.' Р
 <tr>
 <td><font class="vyvesti_sum"></font>&nbsp;&nbsp;<input id="withdrawal_input" class="deposits_input" type="text" name="sum" onkeyup="withdrawal();" placeholder="Сумма" maxlength="9"><a class="btn_log" href="javascript:with(document.getElementById('withdrawal')){ submit(); }">Вывести</a></td></td>
 <div align="center">
-<div class="deposits_date" style="border: 1px solid #dfdfdf; color: #000000; background: none;"><img src="../images/cabinet/phone.png" style="margin: 0px 30px -17px -55px;">Ваш номер для выплат <br> <b>[ <font color="#FF860D"><?echo $u_login;?></font> ]</b></div>
+<div class="deposits_date" style="border: 1px solid #dfdfdf; color: #000000; background: none;"><img src="../images/cabinet/phone.png" style="margin: 0px 30px -17px -55px;">Ваш номер для выплат <br> <b>[ <font color="#FF860D"><?echo $u_name;?></font> ]</b></div>
 </div>
 </tr>
 <div align="center">

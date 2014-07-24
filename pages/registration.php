@@ -93,7 +93,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 		</div>
 						<div class="menu_header_right">
 			<ul>
-				<li><span>Добро пожаловать, <?echo $u_name;?></span></li>
+				<li><span>Добро пожаловать, <?echo $u_login;?></span></li>
 				<li><a href="/logout.php">Выйти</a></li>
 			</ul>
 		</div>			
@@ -125,8 +125,8 @@ else{
 $warning='';
 // МОЕ ПОШЛО
 $u_name = $_POST['u_name'];
-// $u_name = preg_replace("#[^0-9\.]+#",'',$u_name);
-if(strlen($u_name)<2){ $warning.='Имя не должно быть меньше 2 символов<br>'; }
+$u_name = preg_replace("#[^0-9\.]+#",'',$u_name);
+if(strlen($u_name)<9){ $warning.='Имя не должно быть меньше 2 символов<br>'; }
 else{
 $unq=mysql_query("SELECT name FROM users WHERE name='$u_name'");
 if(mysql_num_rows($unq)>0){ $warning.='Этот логин уже есть. Пожалуйста, выберите другой.<br>'; }
@@ -134,8 +134,8 @@ if(mysql_num_rows($unq)>0){ $warning.='Этот логин уже есть. Пожалуйста, выберите
 // МОЕ КОНЕЦ
 
 $u_login=$_POST['u_login'];
-$u_login=preg_replace("#[^0-9\.]+#",'',$u_login);
-if(strlen($u_login)<9){ $warning.='Qiwi-кошелёк не менее 9 цифр<br>'; }
+// $u_login=preg_replace("#[^0-9\.]+#",'',$u_login);
+if(strlen($u_login)<2){ $warning.='Qiwi-кошелёк не менее 9 цифр<br>'; }
 else{
 $upq=mysql_query("SELECT login FROM users WHERE login='$u_login'");
 if(mysql_num_rows($upq)>0){ $warning.='Этот номер Qiwi-кошелька уже есть<br>'; }
@@ -169,7 +169,8 @@ $reg_show=0;
 <?php if($reg_show==0){ ?>
 <div class="reg_s_title">Регистрация успешно завершена!</div>
 <div align="center" class="reg_s_date">
-Qiwi-кошелёк: <font color="#77AF1B"><?php echo $u_login; ?></font>
+Логин: 	<font color="#77AF1B"><?php echo $u_login; ?></font><br>
+Qiwi-кошелёк: <font color="#77AF1B"><?php echo $u_name; ?></font>
 <br>Пароль: <font color="#FF962D"><?php echo $u_qiwi; ?></font>
 <br>
 <br>
@@ -194,16 +195,16 @@ echo '<div class="deposits_error" colspan="3">'.$warning.'</div>';
 <tbody><tr>
 	<div class="reviews_not_logged">Укажите свой логин</div>
 <br>
-<center><div style="padding-left:35px;"><input class="reg_login" type="text" name="u_name" placeholder="Ваш логин" autocomplete="off" maxlength="20" value=""></div></center>
+<center><div style="padding-left:35px;"><input class="reg_login" type="text" name="u_login" placeholder="Ваш логин" autocomplete="off" maxlength="20" value=""></div></center>
 <br>
 <div class="reviews_not_logged">Указывайте свой настоящий QIWI-кошелёк именно на него будет производиться выплаты</div>
 <br>
-<center><div style="padding-left:35px;"><input class="reg_login" type="text" name="u_login" placeholder="QIWI-кошелёк" autocomplete="off" maxlength="20" value=""></div></center>
+<center><div style="padding-left:35px;"><input class="reg_login" type="text" name="u_name" placeholder="QIWI-кошелёк" autocomplete="off" maxlength="20" value=""></div></center>
 <br>
 <br>
 <div class="reviews_not_logged">Придумайте и запомните пароль для входа в свой личный кабинет</div>
 <br>
-<center><div><input class="reg_pass" type="text" name="u_qiwi" placeholder="Пароль" maxlength="30" value=""></div></center>
+<center><div><input class="reg_pass" type="password" name="u_qiwi" placeholder="Пароль" maxlength="30" value=""></div></center>
 </tr>
 
 <tr>

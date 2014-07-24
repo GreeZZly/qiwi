@@ -59,7 +59,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 		</div>
 						<div class="menu_header_right">
 			<ul>
-				<li><span>Добро пожаловать, <?echo $u_name;?></span></li>
+				<li><span>Добро пожаловать, <?echo $u_login;?></span></li>
 				<li><a href="/logout.php">Выйти</a></li>
 			</ul>
 		</div>			
@@ -181,7 +181,7 @@ $b_tot=$b_ref+$b_plus-$b_otn-$b_with-$b_zam+$b_raz;
 		<form id="settings_form_qiwi" action="/" method="POST">
 			<tr>
 				<td>QIWI-кошелек:</td>
-				<td><input type="text" class="reg_login" name="settings_qiwi" value="<?echo $u_login;?>"></td>
+				<td><input type="text" class="reg_login" name="settings_qiwi" value="<?echo $u_name;?>"></td>
 			</tr>
 			<tr>
 				<td colspan="2" class="cab_row_title">
