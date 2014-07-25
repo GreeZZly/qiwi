@@ -83,6 +83,12 @@ $popq=mysql_query("SELECT oid,ologin,obatch,oplan FROM operations WHERE otype=3 
 $popc=mysql_num_rows($popq);
 if($popc>0){
 $popm=mysql_fetch_row($popq);
+// MY 
+		$login = $popm[1];
+		$query = mysql_query("SELECT name FROM users WHERE login = '$login'");
+		$name = mysql_fetch_row($query);
+		// print_r($login);
+		// END MY
 ?>
 <table align="center" class="admin_popolnenie_stat" cellpadding="0px" cellspacing="0px">
 <tr>
@@ -97,7 +103,7 @@ $popm=mysql_fetch_row($popq);
 <table align="center" style="margin-top:10px;" cellpadding="0px" cellspacing="0px">
 <tr>
 <td class="admin_popolnenie_delete"><a href="javascript:admin_popolnenie('<?php echo $popm[0]; ?>','0')">Удалить</a></td>
-<td class="admin_popolnenie_login"><?php echo $popm[1]; ?></td>
+<td class="admin_popolnenie_login"><?php echo $name[0]; ?></td>
 <td class="admin_popolnenie_batch" style="font-size:10px;"><?php echo $popm[2]; ?></td>
 <td class="admin_popolnenie_sum">
 

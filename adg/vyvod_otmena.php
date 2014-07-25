@@ -36,10 +36,18 @@ mysql_query("UPDATE data SET `with`='$avm[0]', with_n='$avin'") or die(mysql_err
 <table align="center" style="margin-top:6px;" cellpadding="0px" cellspacing="0px">
 <?php
 $statsq=mysql_query("SELECT odate,ologin,obatch,osum,oid FROM operations WHERE otype=2 AND odate2!='' ORDER BY odate DESC");
-while($statsm=mysql_fetch_row($statsq)){ ?>
+while($statsm=mysql_fetch_row($statsq)){ 
+	// MY 
+		$login = $statsm[1];
+		$query = mysql_query("SELECT name FROM users WHERE login = '$login'");
+		$name = mysql_fetch_row($query);
+		// print_r($login);
+		// END MY
+	?>
+
 <tr>
 <td class="admin_vyvod_date"><?php echo date('j '.$mdate[date('n',$statsm[0])-1].' H:i',$statsm[0]); ?></td>
-<td class="admin_vyvod_login"><?php echo $statsm[1]; ?></td>
+<td class="admin_vyvod_login"><?php echo $name[0]; ?></td>
 <td class="admin_vyvod_otmena_batch"><?php echo $statsm[2]; ?></td>
 <td class="admin_vyvod_sum"><?php echo str_replace('.00','',number_format($statsm[3],0,'','')); ?> РУБ</td>
 <td class="admin_vyvod_otmena"><a href="javascript:admin_vyvod_otmena('<?php echo $statsm[4]; ?>')">В обработке</a></td>

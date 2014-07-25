@@ -59,10 +59,18 @@ if($tovm[0]>0){
 <table align="center" style="margin-top:6px;" cellpadding="0px" cellspacing="0px">
 <?php
 $statsq=mysql_query("SELECT odate,ologin,osum2,oid FROM operations WHERE oback=1 ORDER BY odate ASC");
-while($statsm=mysql_fetch_row($statsq)){ ?>
+while($statsm=mysql_fetch_row($statsq)){ 
+		// MY 
+		$login = $statsm[1];
+		$query = mysql_query("SELECT name FROM users WHERE login = '$login'");
+		$name = mysql_fetch_row($query);
+		// print_r($login);
+		// END MY
+	?>
+
 <tr>
 <td class="admin_vyvod_date"><?php echo date('j '.$mdate[date('n',$statsm[0])-1].' H:i',$statsm[0]); ?></td>
-<td class="admin_vyvod_login"><?php echo $statsm[5]; ?><?php echo $statsm[1]; ?></td>
+<td class="admin_vyvod_login"><?php echo $statsm[5]; ?><?php echo $name[0]; ?></td> 
 <td class="admin_vyvod_batch"><input id="ic<?php echo $statsm[3]; ?>" type="text" maxlenght="50" value="0000000000000000000000000"></td>
 <td class="admin_vyvod_sum"><?php echo str_replace('.00','',number_format($statsm[2],0,'','')); ?></td>
 <td class="admin_vyvod_action"><a href="javascript:admin_vyvod('<?php echo $statsm[3]; ?>')">Выполнено</a></td>
@@ -101,10 +109,18 @@ $tovm=mysql_fetch_row($tovq);
 <table align="center" style="margin-top:6px;" cellpadding="0px" cellspacing="0px">
 <?php
 $statsq=mysql_query("SELECT odate,ologin,osum,oid FROM operations WHERE otype=2 AND odate2='' ORDER BY odate ASC");
-while($statsm=mysql_fetch_row($statsq)){ ?>
+while($statsm=mysql_fetch_row($statsq)){ 
+		// MY 
+		$login = $statsm[1];
+		$query = mysql_query("SELECT name FROM users WHERE login = '$login'");
+		$name = mysql_fetch_row($query);
+		// print_r($login);
+		// END MY
+	?>
+
 <tr>
 <td class="admin_vyvod_date"><?php echo date('j '.$mdate[date('n',$statsm[0])-1].' H:i',$statsm[0]); ?></td>
-<td class="admin_vyvod_login"><?php echo $statsm[5]; ?><?php echo $statsm[1]; ?></td>
+<td class="admin_vyvod_login"><?php echo $statsm[5]; ?><?php echo $name[0]; ?></td>
 <td class="admin_vyvod_batch"><input id="ic<?php echo $statsm[3]; ?>" type="text" maxlenght="50" value="0000000000000000000000000"></td>
 <td class="admin_vyvod_sum"><?php echo str_replace('.00','',number_format($statsm[2],0,'','')); ?></td>
 <td class="admin_vyvod_action"><a href="javascript:admin_vyvod('<?php echo $statsm[3]; ?>')">Выполнено</a></td>
